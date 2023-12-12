@@ -49,7 +49,6 @@ const HomeScreen: React.FC = () => {
 
       <Modal visible={isOpen} animationType="slide">
         <View>
-          <Button title="Fechar" onPress={closeModal} />
           {selectedCharacter && (
             <View>
               <Image
@@ -57,9 +56,12 @@ const HomeScreen: React.FC = () => {
                 style={{ width: 100, height: 100 }}
               />
               <Text>Name: {selectedCharacter.name}</Text>
-              {/* Adicione outras informações do personagem conforme necessário */}
+              <Text>
+                Number of Episodes: {selectedCharacter.episode.length}
+              </Text>
             </View>
           )}
+          <Button title="Fechar" onPress={closeModal} />
         </View>
       </Modal>
     </Container>
