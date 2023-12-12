@@ -1,6 +1,6 @@
 // src/graphql.ts
 import { gql } from "@apollo/client";
-import { Character, CharacterDetails } from "./types/types";
+import { Character, CharacterDetails } from "../types/types";
 
 export const GET_CHARACTERS = gql`
   query GetCharacters($page: Int, $name: String) {

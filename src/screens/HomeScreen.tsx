@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, FlatList, Modal, Button, Text, Image } from "react-native";
 import { useQuery } from "@apollo/client";
-import { Character, GET_CHARACTERS } from "../graphql";
+import { Character, GET_CHARACTERS } from "../graphql/graphql";
 import CharacterListItem from "../components/List/CharacterListItem";
 import { Container, SearchInput, SearchButton, LoadingText } from "./styles";
 
