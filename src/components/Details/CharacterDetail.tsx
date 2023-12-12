@@ -1,7 +1,10 @@
 import React from "react";
 import { View, Text, Image } from "react-native";
+import { CharacterDetails } from "../../types/types";
 
-const CharacterDetail: React.FC<{ character: any }> = ({ character }) => (
+const CharacterDetail: React.FC<{ character: CharacterDetails }> = ({
+  character,
+}) => (
   <View>
     <Image
       source={{ uri: character.image }}
